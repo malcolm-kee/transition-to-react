@@ -629,12 +629,24 @@
     <script src="js/audio.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/signup.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
     <script>
-      const span = document.createElement('span');
-      span.innerHTML = 'Hello world';
-      span.className = 'text-xl text-gray-500';
+      const span = React.createElement(
+        'span',
+        {
+          className: 'text-xl text-gray-500'
+        },
+        'Hello world'
+      );
       const target = document.querySelector('#target');
-      target.appendChild(span);
+      ReactDOM.render(span, target);
     </script>
   </body>
 </html>
