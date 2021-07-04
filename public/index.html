@@ -638,12 +638,20 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
     ></script>
     <script>
+      const worldEl = React.createElement(
+        'em',
+        {
+          className: 'text-red-700'
+        },
+        'world'
+      );
       const span = React.createElement(
         'span',
         {
           className: 'text-xl text-gray-500'
         },
-        'Hello world'
+        'Hello, ',
+        worldEl
       );
       const target = document.querySelector('#target');
       ReactDOM.render(span, target);
