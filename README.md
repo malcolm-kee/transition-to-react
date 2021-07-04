@@ -1,2 +1,2 @@
-# transition-to-react
+# vanilla-js-site
 Created with CodeSandbox
