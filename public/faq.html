@@ -721,10 +721,14 @@
       function showNow() {
         const now = new Date().toLocaleTimeString();
 
-        const target = document.querySelector('#now');
-        target.innerHTML = `
-          <small>Now is <span class="font-bold">${now}</span></small>
-        `;
+        const el = React.createElement(
+          'small',
+          {},
+          'Now is ',
+          React.createElement('span', { className: 'font-bold' }, now)
+        );
+
+        ReactDOM.render(el, document.querySelector('#now'));
       }
 
       showNow();
