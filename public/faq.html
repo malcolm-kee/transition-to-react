@@ -689,7 +689,8 @@
             Inc.</small
           >
           <span id="today-weekday"></span>
-          <small>Today is <span id="footer-today">2020-10-21</span></small>
+          <!-- <small>Today is <span id="footer-today">2020-10-21</span></small> -->
+          <div id="now"></div>
         </div>
       </div>
     </footer>
@@ -716,6 +717,19 @@
         React.createElement('b', { className: 'underline' }, 'Sun')
       );
       ReactDOM.render(el, document.querySelector('#today-weekday'));
+
+      function showNow() {
+        const now = new Date().toLocaleTimeString();
+
+        const target = document.querySelector('#now');
+        target.innerHTML = `
+          <small>Now is <span class="font-bold">${now}</span></small>
+        `;
+      }
+
+      showNow();
+
+      setInterval(showNow, 1000);
     </script>
   </body>
 </html>
