@@ -66,7 +66,9 @@
     <main class="bg-gray-50">
       <div class="max-w-4xl mx-auto px-3 py-12 space-y-6">
         <div>
-          <h1 class="text-6xl mb-4 font-extrabold">Simple website</h1>
+          <h1 class="text-6xl mb-4 font-extrabold">
+            Simple website <span id="target"></span>
+          </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
             Distinctio vero maxime similique fuga molestias recusandae fugit vel
@@ -627,5 +629,12 @@
     <script src="js/audio.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/signup.js"></script>
+    <script>
+      const span = document.createElement('span');
+      span.innerHTML = 'Hello world';
+      span.className = 'text-xl text-gray-500';
+      const target = document.querySelector('#target');
+      target.appendChild(span);
+    </script>
   </body>
 </html>
