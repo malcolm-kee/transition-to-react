@@ -688,7 +688,7 @@
             >Copyright &copy; <span id="footer-year">2020</span> Big Corp
             Inc.</small
           >
-          <!-- Insert content here using React -->
+          <span id="today-weekday"></span>
           <small>Today is <span id="footer-today">2020-10-21</span></small>
         </div>
       </div>
@@ -697,12 +697,25 @@
     <script src="js/script.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/faq.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
     <script>
       const today = new Date();
       const dayLabels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       const todayLabel = dayLabels[today.getDay()];
-      console.log({ todayLabel });
-      // TODO: insert '<span class="text-xs">Today is <b class="underline">Sun</b></span>' using React
+      const el = React.createElement(
+        'span',
+        { className: 'text-xs' },
+        'Today is ',
+        React.createElement('b', { className: 'underline' }, 'Sun')
+      );
+      ReactDOM.render(el, document.querySelector('#today-weekday'));
     </script>
   </body>
 </html>
