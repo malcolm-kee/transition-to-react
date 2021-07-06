@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marketplace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/base.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/components.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@tailwindcss/forms@0.3.3/dist/forms.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@tailwindcss/line-clamp@0.2.1/dist/line-clamp.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/utilities.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="border-b border-gray-100">
+      <div class="bg-pink-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+          <nav class="flex items-center justify-between gap-3">
+            <div>
+              <a href="/" class="text-2xl">Simple website</a>
+            </div>
+            <nav class="flex justify-end items-center flex-wrap gap-2">
+              <a href="/faq" class="px-2 hover:text-gray-200">FAQ</a>
+              <a href="/terms-of-use" class="px-2 hover:text-gray-200"
+                >Terms of use</a
+              >
+              <a href="/about-us" class="px-2 hover:text-gray-200">About Us</a>
+              <a href="/pricing" class="px-2 hover:text-gray-200">Pricing</a>
+            </nav>
+          </nav>
+        </div>
+      </div>
+      <div class="text-gray-500">
+        <div class="max-w-6xl mx-auto px-4 py-2 text-sm">
+          <nav class="flex justify-end items-center flex-wrap gap-5">
+            <a href="/tax-calculator" class="hover:text-pink-800"
+              >Tax Calculator</a
+            >
+            <a href="/bill-splitter" class="hover:text-pink-800"
+              >Bill Splitter</a
+            >
+            <a href="/tax-calculator-v2" class="hover:text-pink-800"
+              >Tax Calculator v2</a
+            >
+            <a href="/bill-splitter-v2" class="hover:text-pink-800"
+              >Bill Splitter v2</a
+            >
+            <a href="/tax-calculator-broken" class="hover:text-pink-800"
+              >Broken Tax Calculator</a
+            >
+            <a href="/pokemons" class="hover:text-pink-800">Pokemons</a>
+            <a href="/careers" class="hover:text-pink-800">Careers</a>
+            <a href="/marketplace" class="hover:text-pink-800">Marketplace</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="bg-gray-50 lg:flex">
+      <div class="flex-1">
+        <div class="max-w-7xl mx-auto pt-16 pb-24 px-4 sm:px-6 lg:px-8">
+          <div class="sm:flex sm:flex-col sm:align-center mb-12">
+            <h1 class="text-5xl font-extrabold text-gray-900 sm:text-center">
+              Marketplace
+            </h1>
+          </div>
+          <ul
+            role="list"
+            class="
+              grid
+              md:grid-cols-2
+              gap-x-4 gap-y-8
+              xl:grid-cols-3 xl:gap-x-6
+            "
+          >
+            <li class="relative">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only">View details for Nike Air 2021</span>
+                </button>
+              </div>
+              <div class="flex justify-between items-start gap-3">
+                <div class="mt-1">
+                  <div>RM <span class="text-2xl font-bold">99</span></div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Nike Air 2021
+                  </p>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    So light it feels like walking in the air.
+                  </p>
+                </div>
+                <div class="flex py-3">
+                  <button
+                    class="
+                      inline-flex
+                      justify-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    EDIT
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="relative">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1594995846645-d58328c3ffa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only"
+                    >View details for Classic Quartz Clock</span
+                  >
+                </button>
+              </div>
+              <div class="flex justify-between items-start gap-3">
+                <div class="mt-1">
+                  <div>RM <span class="text-2xl font-bold">10</span></div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Classic Quartz Clock
+                  </p>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    Inexpensive. Best as birthday gift for your enemy.
+                  </p>
+                </div>
+                <div class="flex py-3">
+                  <button
+                    class="
+                      inline-flex
+                      justify-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    EDIT
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="relative">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1571689936114-b16146c9570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only"
+                    >View details for Handsome Handcarry Bag</span
+                  >
+                </button>
+              </div>
+              <div class="flex justify-between items-start gap-3">
+                <div class="mt-1">
+                  <div>RM <span class="text-2xl font-bold">50</span></div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Handsome Handcarry Bag
+                  </p>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    Elegant. Versatile. Influencer-friendly.
+                  </p>
+                </div>
+                <div class="flex py-3">
+                  <button
+                    class="
+                      inline-flex
+                      justify-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    EDIT
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="relative">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1596460107916-430662021049?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only"
+                    >View details for Authentic Seiko Watch</span
+                  >
+                </button>
+              </div>
+              <div class="flex justify-between items-start gap-3">
+                <div class="mt-1">
+                  <div>RM <span class="text-2xl font-bold">2,500</span></div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Authentic Seiko Watch
+                  </p>
+                  <p
+                    class="
+                      text-sm
+                      line-clamp-3
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    The Seiko Prospex challenges every limit, with a collection
+                    of timepieces for sport lovers and adventure seekers.
+                  </p>
+                </div>
+                <div class="flex py-3">
+                  <button
+                    class="
+                      inline-flex
+                      justify-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    EDIT
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <!-- More files... -->
+          </ul>
+        </div>
+      </div>
+      <div
+        class="
+          flex-initial
+          bg-white
+          w-full
+          lg:max-w-md
+          border-b border-gray-100
+          lg:max-h-screen
+          overflow-y-auto
+        "
+      >
+        <form class="flex flex-col h-full">
+          <div class="py-6 px-4 bg-pink-700 sm:px-6">
+            <div class="flex items-center justify-between">
+              <h2 class="text-lg font-medium text-white">New Listing</h2>
+            </div>
+            <div class="mt-1">
+              <p class="text-sm text-pink-300">
+                Get started by filling in the information below to create your
+                new listing.
+              </p>
+            </div>
+          </div>
+          <div class="flex-1 px-4 sm:px-6 pb-12">
+            <div class="space-y-6 pt-6 pb-5">
+              <div>
+                <label
+                  for="listing-title"
+                  class="block text-sm font-medium text-gray-900"
+                >
+                  Title
+                </label>
+                <div class="mt-1">
+                  <input
+                    type="text"
+                    name="listing-title"
+                    id="listing-title"
+                    required
+                    class="
+                      block
+                      w-full
+                      shadow-sm
+                      sm:text-sm
+                      focus:ring-pink-500 focus:border-pink-500
+                      border-gray-300
+                      rounded-md
+                    "
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="listing-price"
+                  class="block text-sm font-medium text-gray-900"
+                >
+                  Price
+                </label>
+                <div class="mt-1">
+                  <input
+                    type="number"
+                    name="listing-price"
+                    id="listing-price"
+                    required
+                    class="
+                      block
+                      w-full
+                      shadow-sm
+                      sm:text-sm
+                      focus:ring-pink-500 focus:border-pink-500
+                      border-gray-300
+                      rounded-md
+                    "
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="description"
+                  class="block text-sm font-medium text-gray-900"
+                >
+                  Description
+                </label>
+                <div class="mt-1">
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="4"
+                    required
+                    class="
+                      block
+                      w-full
+                      shadow-sm
+                      sm:text-sm
+                      focus:ring-pink-500 focus:border-pink-500
+                      border border-gray-300
+                      rounded-md
+                    "
+                  ></textarea>
+                </div>
+              </div>
+              <div>
+                <label
+                  for="listing-condition"
+                  class="block text-sm font-medium text-gray-900"
+                >
+                  Condition
+                </label>
+                <div class="mt-1">
+                  <select
+                    id="listing-condition"
+                    name="listing-condition"
+                    required
+                    class="
+                      block
+                      w-full
+                      pl-3
+                      pr-10
+                      py-2
+                      text-base
+                      border-gray-300
+                      focus:outline-none
+                      focus:ring-pink-500
+                      focus:border-pink-500
+                      sm:text-sm
+                      rounded-md
+                    "
+                  >
+                    <option value="new">New</option>
+                    <option value="used_like-new">Used (like new)</option>
+                    <option value="used_good">Used (good)</option>
+                    <option value="used_fair">Used (fair)</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label
+                  for="listing-availability"
+                  class="block text-sm font-medium text-gray-900"
+                >
+                  Availability
+                </label>
+                <div class="mt-1">
+                  <select
+                    id="listing-availability"
+                    name="listing-availability"
+                    required
+                    class="
+                      block
+                      w-full
+                      pl-3
+                      pr-10
+                      py-2
+                      text-base
+                      border-gray-300
+                      focus:outline-none
+                      focus:ring-pink-500
+                      focus:border-pink-500
+                      sm:text-sm
+                      rounded-md
+                    "
+                  >
+                    <option value="in-stock">In Stock</option>
+                    <option value="single-item">Single Item</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex-shrink-0
+              px-4
+              py-4
+              flex
+              justify-end
+              border-t border-gray-200
+            "
+          >
+            <button
+              type="submit"
+              class="
+                ml-4
+                inline-flex
+                justify-center
+                py-2
+                px-4
+                border border-transparent
+                shadow-sm
+                text-sm
+                font-medium
+                rounded-md
+                text-white
+                bg-pink-600
+                hover:bg-pink-700
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-pink-500
+              "
+            >
+              ADD
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="bg-white text-gray-400">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-8 xl:col-span-1">
+            <div>
+              <a href="/" class="text-2xl font-bold text-black">
+                Simple website
+              </a>
+            </div>
+            <p class="text-gray-500 text-base">
+              Simplicity is the ultimate sophistication.
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="
+                    text-sm
+                    font-semibold
+                    text-gray-400
+                    tracking-wider
+                    uppercase
+                  "
+                >
+                  Features
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/tax-calculator"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Tax Calculator
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/bill-splitter"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Bill Splitter
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/tax-calculator-v2"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Tax Calculator v2
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/bill-splitter-v2"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Bill Splitter v2
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/tax-calculator-broken"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Broken Tax Calculator
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/pokemons"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pokemons
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/marketplace"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Marketplace
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="
+                    text-sm
+                    font-semibold
+                    text-gray-400
+                    tracking-wider
+                    uppercase
+                  "
+                >
+                  Support
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/pricing"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/faq"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="
+                    text-sm
+                    font-semibold
+                    text-gray-400
+                    tracking-wider
+                    uppercase
+                  "
+                >
+                  Company
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/about-us"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      About Us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/careers"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="
+                    text-sm
+                    font-semibold
+                    text-gray-400
+                    tracking-wider
+                    uppercase
+                  "
+                >
+                  Legal
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/terms-of-use"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Terms of use
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            flex
+            justify-between
+            mt-12
+            border-t border-gray-200
+            pt-8
+            text-center
+          "
+        >
+          <small
+            >Copyright &copy; <span id="footer-year">2020</span> Big Corp
+            Inc.</small
+          >
+          <small>Today is <span id="footer-today">2020-10-21</span></small>
+        </div>
+      </div>
+    </footer>
+    <script src="js/helpers.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/pricing.js"></script>
+  </body>
+</html>
