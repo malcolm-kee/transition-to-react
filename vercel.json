@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "intro-to-js-playground",
+  "name": "transition-to-react-playground",
   "builds": [{ "src": "app.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
 }
