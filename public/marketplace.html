@@ -78,7 +78,6 @@
             </h1>
           </div>
           <ul
-            role="list"
             class="
               grid
               md:grid-cols-2
@@ -86,7 +85,7 @@
               xl:grid-cols-3 xl:gap-x-6
             "
           >
-            <li class="relative">
+            <li class="relative flex flex-col">
               <div
                 class="
                   group
@@ -119,7 +118,15 @@
                   <span class="sr-only">View details for Nike Air 2021</span>
                 </button>
               </div>
-              <div class="flex justify-between items-start gap-3">
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  gap-3
+                "
+              >
                 <div class="mt-1">
                   <div>RM <span class="text-2xl font-bold">99</span></div>
                   <p
@@ -146,11 +153,13 @@
                     So light it feels like walking in the air.
                   </p>
                 </div>
-                <div class="flex py-3">
+                <div class="flex flex-col md:flex-row gap-3 py-3">
                   <button
+                    type="button"
                     class="
                       inline-flex
                       justify-center
+                      items-center
                       py-2
                       px-4
                       border border-transparent
@@ -167,13 +176,59 @@
                       focus:ring-pink-500
                     "
                   >
+                    <svg
+                      class="h-4 w-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                      ></path>
+                    </svg>
                     EDIT
+                  </button>
+                  <button
+                    type="button"
+                    class="
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-pink-500
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-pink-500
+                      bg-white
+                      hover:text-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    DELETE
                   </button>
                 </div>
               </div>
             </li>
 
-            <li class="relative">
+            <li class="relative flex flex-col">
               <div
                 class="
                   group
@@ -208,7 +263,15 @@
                   >
                 </button>
               </div>
-              <div class="flex justify-between items-start gap-3">
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  gap-3
+                "
+              >
                 <div class="mt-1">
                   <div>RM <span class="text-2xl font-bold">10</span></div>
                   <p
@@ -235,11 +298,13 @@
                     Inexpensive. Best as birthday gift for your enemy.
                   </p>
                 </div>
-                <div class="flex py-3">
+                <div class="flex flex-col md:flex-row gap-3 py-3">
                   <button
+                    type="button"
                     class="
                       inline-flex
                       justify-center
+                      items-center
                       py-2
                       px-4
                       border border-transparent
@@ -256,13 +321,59 @@
                       focus:ring-pink-500
                     "
                   >
+                    <svg
+                      class="h-4 w-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                      ></path>
+                    </svg>
                     EDIT
+                  </button>
+                  <button
+                    type="button"
+                    class="
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-pink-500
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-pink-500
+                      bg-white
+                      hover:text-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    DELETE
                   </button>
                 </div>
               </div>
             </li>
 
-            <li class="relative">
+            <li class="relative flex flex-col">
               <div
                 class="
                   group
@@ -297,7 +408,15 @@
                   >
                 </button>
               </div>
-              <div class="flex justify-between items-start gap-3">
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  gap-3
+                "
+              >
                 <div class="mt-1">
                   <div>RM <span class="text-2xl font-bold">50</span></div>
                   <p
@@ -324,11 +443,13 @@
                     Elegant. Versatile. Influencer-friendly.
                   </p>
                 </div>
-                <div class="flex py-3">
+                <div class="flex flex-col md:flex-row gap-3 py-3">
                   <button
+                    type="button"
                     class="
                       inline-flex
                       justify-center
+                      items-center
                       py-2
                       px-4
                       border border-transparent
@@ -345,13 +466,59 @@
                       focus:ring-pink-500
                     "
                   >
+                    <svg
+                      class="h-4 w-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                      ></path>
+                    </svg>
                     EDIT
+                  </button>
+                  <button
+                    type="button"
+                    class="
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-pink-500
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-pink-500
+                      bg-white
+                      hover:text-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    DELETE
                   </button>
                 </div>
               </div>
             </li>
 
-            <li class="relative">
+            <li class="relative flex flex-col">
               <div
                 class="
                   group
@@ -386,7 +553,15 @@
                   >
                 </button>
               </div>
-              <div class="flex justify-between items-start gap-3">
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  gap-3
+                "
+              >
                 <div class="mt-1">
                   <div>RM <span class="text-2xl font-bold">2,500</span></div>
                   <p
@@ -414,11 +589,13 @@
                     of timepieces for sport lovers and adventure seekers.
                   </p>
                 </div>
-                <div class="flex py-3">
+                <div class="flex flex-col md:flex-row gap-3 py-3">
                   <button
+                    type="button"
                     class="
                       inline-flex
                       justify-center
+                      items-center
                       py-2
                       px-4
                       border border-transparent
@@ -435,13 +612,57 @@
                       focus:ring-pink-500
                     "
                   >
+                    <svg
+                      class="h-4 w-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                      ></path>
+                    </svg>
                     EDIT
+                  </button>
+                  <button
+                    type="button"
+                    class="
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-pink-500
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-pink-500
+                      bg-white
+                      hover:text-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    DELETE
                   </button>
                 </div>
               </div>
             </li>
-
-            <!-- More files... -->
           </ul>
         </div>
       </div>
@@ -452,8 +673,6 @@
           w-full
           lg:max-w-md
           border-b border-gray-100
-          lg:max-h-screen
-          overflow-y-auto
         "
       >
         <form class="flex flex-col h-full">
@@ -468,7 +687,7 @@
               </p>
             </div>
           </div>
-          <div class="flex-1 px-4 sm:px-6 pb-12">
+          <div class="px-4 sm:px-6 pb-12">
             <div class="space-y-6 pt-6 pb-5">
               <div>
                 <label
@@ -856,6 +1075,5 @@
     <script src="js/helpers.js"></script>
     <script src="js/script.js"></script>
     <script src="js/footer.js"></script>
-    <script src="js/pricing.js"></script>
   </body>
 </html>
