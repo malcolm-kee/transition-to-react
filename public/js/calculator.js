@@ -17,6 +17,21 @@ function calculateTax() {
   document.querySelector('#result').innerHTML = total.toFixed(2);
 }
 
+(function initForm() {
+  const $paxInput = document.querySelector('#pax');
+  const $paxPlusBtn = document.querySelector('#pax-plus-btn');
+  const $paxMinusBtn = document.querySelector('#pax-minus-btn');
+
+  $paxPlusBtn.addEventListener('click', () => {
+    const currentValue = Number($paxInput.value || 0);
+    $paxInput.value = currentValue + 1;
+  });
+  $paxMinusBtn.addEventListener('click', () => {
+    const currentValue = Number($paxInput.value || 0);
+    $paxInput.value = currentValue - 1;
+  });
+})();
+
 function splitBill() {
   // alert('splitBill is called');
 
