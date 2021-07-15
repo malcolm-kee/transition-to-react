@@ -28,6 +28,12 @@
       */
       pokemons.forEach((pokemon) => {
         const item = document.createElement('li');
+        item.addEventListener('click', () => {
+          const iconLink = document.querySelector('link[rel="icon"]');
+          if (iconLink) {
+            iconLink.href = pokemon.thumbnail;
+          }
+        });
         item.className =
           'col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200';
 
