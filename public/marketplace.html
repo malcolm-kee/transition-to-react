@@ -124,12 +124,16 @@
                   md:flex-col
                   justify-between
                   items-start
+                  md:items-stretch
                   gap-3
                   px-2
                 "
               >
-                <div class="mt-1">
-                  <div>RM <span class="text-2xl font-bold">99</span></div>
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>RM <span class="text-2xl font-bold">99</span></div>
+                    <div class="text-sm text-gray-500">5 piece available</div>
+                  </div>
                   <p
                     class="
                       block
@@ -158,6 +162,7 @@
                   <button
                     type="button"
                     class="
+                      js-edit-btn
                       inline-flex
                       justify-center
                       items-center
@@ -192,6 +197,7 @@
                   <button
                     type="button"
                     class="
+                      js-delete-btn
                       inline-flex
                       justify-center
                       items-center
@@ -270,12 +276,16 @@
                   md:flex-col
                   justify-between
                   items-start
+                  md:items-stretch
                   gap-3
                   px-2
                 "
               >
-                <div class="mt-1">
-                  <div>RM <span class="text-2xl font-bold">10</span></div>
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>RM <span class="text-2xl font-bold">10</span></div>
+                    <div class="text-sm text-gray-500">143 piece available</div>
+                  </div>
                   <p
                     class="
                       block
@@ -304,6 +314,7 @@
                   <button
                     type="button"
                     class="
+                      js-edit-btn
                       inline-flex
                       justify-center
                       items-center
@@ -338,6 +349,7 @@
                   <button
                     type="button"
                     class="
+                      js-delete-btn
                       inline-flex
                       justify-center
                       items-center
@@ -416,12 +428,30 @@
                   md:flex-col
                   justify-between
                   items-start
+                  md:items-stretch
                   gap-3
                   px-2
                 "
               >
-                <div class="mt-1">
-                  <div>RM <span class="text-2xl font-bold">50</span></div>
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>RM <span class="text-2xl font-bold">50</span></div>
+                    <span
+                      class="
+                        inline-flex
+                        items-center
+                        px-2.5
+                        py-0.5
+                        rounded-full
+                        text-xs
+                        font-medium
+                        bg-red-100
+                        text-red-800
+                      "
+                    >
+                      Only One
+                    </span>
+                  </div>
                   <p
                     class="
                       block
@@ -450,6 +480,7 @@
                   <button
                     type="button"
                     class="
+                      js-edit-btn
                       inline-flex
                       justify-center
                       items-center
@@ -484,6 +515,7 @@
                   <button
                     type="button"
                     class="
+                      js-delete-btn
                       inline-flex
                       justify-center
                       items-center
@@ -562,12 +594,30 @@
                   md:flex-col
                   justify-between
                   items-start
+                  md:items-stretch
                   gap-3
                   px-2
                 "
               >
-                <div class="mt-1">
-                  <div>RM <span class="text-2xl font-bold">2,500</span></div>
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>RM <span class="text-2xl font-bold">2,500</span></div>
+                    <span
+                      class="
+                        inline-flex
+                        items-center
+                        px-2.5
+                        py-0.5
+                        rounded-full
+                        text-xs
+                        font-medium
+                        bg-red-100
+                        text-red-800
+                      "
+                    >
+                      Only One
+                    </span>
+                  </div>
                   <p
                     class="
                       block
@@ -597,6 +647,7 @@
                   <button
                     type="button"
                     class="
+                      js-edit-btn
                       inline-flex
                       justify-center
                       items-center
@@ -631,6 +682,7 @@
                   <button
                     type="button"
                     class="
+                      js-delete-btn
                       inline-flex
                       justify-center
                       items-center
@@ -832,6 +884,32 @@
                     <option value="in-stock">In Stock</option>
                     <option value="single-item">Single Item</option>
                   </select>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="num-of-stock"
+                  class="block text-sm font-medium text-gray-900"
+                >
+                  Number of Available Stock
+                </label>
+                <div class="mt-1">
+                  <input
+                    type="number"
+                    name="num-of-stock"
+                    id="num-of-stock"
+                    required
+                    class="
+                      block
+                      w-full
+                      shadow-sm
+                      sm:text-sm
+                      focus:ring-pink-500 focus:border-pink-500
+                      border-gray-300
+                      rounded-md
+                    "
+                  />
                 </div>
               </div>
             </div>
@@ -1079,5 +1157,36 @@
     <script src="js/helpers.js"></script>
     <script src="js/script.js"></script>
     <script src="js/footer.js"></script>
+    <script>
+      (function initListing() {
+        const editBtns = Array.from(document.querySelectorAll('.js-edit-btn'));
+        const deleteBtns = Array.from(
+          document.querySelectorAll('.js-delete-btn')
+        );
+        editBtns.forEach((btn) => {
+          btn.addEventListener('click', () =>
+            alert('Edit btn clicked, populate the form!')
+          );
+        });
+        deleteBtns.forEach((btn) => {
+          btn.addEventListener('click', () =>
+            alert('Delete btn clicked, delete the item!')
+          );
+        });
+      })();
+      (function initForm() {
+        const $availability = document.querySelector('#listing-availability');
+        const $availableStockControl =
+          document.querySelector('#num-of-stock').parentNode.parentNode;
+        $availability.addEventListener('change', (ev) => {
+          const value = ev.target.value;
+          if (value === 'in-stock') {
+            $availableStockControl.classList.remove('hidden');
+          } else {
+            $availableStockControl.classList.add('hidden');
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
