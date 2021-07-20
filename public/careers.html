@@ -320,6 +320,10 @@
                             </svg>
                           </button>
                         </div>
+                        <div
+                          id="headcount-error"
+                          class="text-red-500 text-xs pt-1 hidden"
+                        ></div>
                       </div>
                     </div>
                   </div>
@@ -1108,16 +1112,6 @@
       id="signup-notification"
     >
       <div class="w-full flex flex-col items-center space-y-4 sm:items-end">
-        <!--
-          Notification panel, dynamically insert this into the live region when it needs to be displayed
-    
-          Entering: "transform ease-out duration-300 transition"
-            From: "translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
-            To: "translate-y-0 opacity-100 sm:translate-x-0"
-          Leaving: "transition ease-in duration-100"
-            From: "opacity-100"
-            To: "opacity-0"
-        -->
         <div
           class="
             max-w-sm
@@ -1133,7 +1127,6 @@
           <div class="p-4">
             <div class="flex items-start">
               <div class="flex-shrink-0">
-                <!-- Heroicon name: outline/check-circle -->
                 <svg
                   class="h-6 w-6 text-green-400"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1190,14 +1183,27 @@
         const $headcountMinusBtn = document.querySelector(
           '#headcount-minus-btn'
         );
+        const $headcountError = document.querySelector('#headcount-error');
+
+        const hideError = () => $headcountError.classList.add('hidden');
+        const showError = (msg) => {
+          $headcountError.innerHTML = msg;
+          $headcountError.classList.remove('hidden');
+        };
 
         $headcountPlusBtn.addEventListener('click', () => {
+          hideError();
           const currentValue = Number($headcountInput.value || 0);
           $headcountInput.value = currentValue + 1;
         });
         $headcountMinusBtn.addEventListener('click', () => {
+          hideError();
           const currentValue = Number($headcountInput.value || 0);
-          $headcountInput.value = currentValue - 1;
+          if (currentValue > 1) {
+            $headcountInput.value = currentValue - 1;
+          } else {
+            showError('Headcount must be at least 1.');
+          }
         });
       })();
     </script>
