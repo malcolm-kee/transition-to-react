@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marketplace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/base.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/components.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@tailwindcss/forms@0.3.3/dist/forms.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@tailwindcss/line-clamp@0.2.1/dist/line-clamp.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/utilities.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="bg-gray-50 lg:flex">
+      <div class="flex-1">
+        <div class="max-w-7xl mx-auto pt-16 pb-24 px-4 sm:px-6 lg:px-8">
+          <div class="sm:flex sm:flex-col sm:align-center mb-12">
+            <h1 class="text-5xl font-extrabold text-gray-900 sm:text-center">
+              Marketplace
+            </h1>
+          </div>
+          <div
+            class="
+              grid
+              md:grid-cols-2
+              gap-x-4 gap-y-8
+              xl:grid-cols-3 xl:gap-x-6
+            "
+          >
+            <div class="relative flex flex-col">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only">View details for Nike Air 2021</span>
+                </button>
+              </div>
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  md:items-stretch
+                  gap-3
+                  px-2
+                "
+              >
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>$ <span class="text-2xl font-bold">99</span></div>
+                    <div class="text-sm text-gray-500">5 piece available</div>
+                  </div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Nike Air 2021
+                  </p>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    So light it feels like walking in the air.
+                  </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-3 py-3">
+                  <button
+                    type="button"
+                    class="
+                      js-add-to-cart-btn
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1594995846645-d58328c3ffa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only"
+                    >View details for Classic Quartz Clock</span
+                  >
+                </button>
+              </div>
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  md:items-stretch
+                  gap-3
+                  px-2
+                "
+              >
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>$ <span class="text-2xl font-bold">10</span></div>
+                    <div class="text-sm text-gray-500">143 piece available</div>
+                  </div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Classic Quartz Clock
+                  </p>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    Inexpensive. Best as birthday gift for your enemy.
+                  </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-3 py-3">
+                  <button
+                    type="button"
+                    class="
+                      js-add-to-cart-btn
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1571689936114-b16146c9570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only"
+                    >View details for Handsome Handcarry Bag</span
+                  >
+                </button>
+              </div>
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  md:items-stretch
+                  gap-3
+                  px-2
+                "
+              >
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>$ <span class="text-2xl font-bold">50</span></div>
+                    <span
+                      class="
+                        inline-flex
+                        items-center
+                        px-2.5
+                        py-0.5
+                        rounded-full
+                        text-xs
+                        font-medium
+                        bg-red-100
+                        text-red-800
+                      "
+                    >
+                      Only One
+                    </span>
+                  </div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Handsome Handcarry Bag
+                  </p>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    Elegant. Versatile. Influencer-friendly.
+                  </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-3 py-3">
+                  <button
+                    type="button"
+                    class="
+                      js-add-to-cart-btn
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col">
+              <div
+                class="
+                  group
+                  block
+                  w-full
+                  rounded-lg
+                  bg-gray-100
+                  focus-within:ring-2
+                  focus-within:ring-offset-2
+                  focus-within:ring-offset-gray-100
+                  focus-within:ring-pink-500
+                  overflow-hidden
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1596460107916-430662021049?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&h=384&q=80"
+                  alt=""
+                  class="
+                    object-cover
+                    pointer-events-none
+                    group-hover:opacity-75
+                    h-48
+                    w-full
+                  "
+                />
+                <button
+                  type="button"
+                  class="absolute inset-0 focus:outline-none"
+                >
+                  <span class="sr-only"
+                    >View details for Authentic Seiko Watch</span
+                  >
+                </button>
+              </div>
+              <div
+                class="
+                  flex-1 flex
+                  md:flex-col
+                  justify-between
+                  items-start
+                  md:items-stretch
+                  gap-3
+                  px-2
+                "
+              >
+                <div class="mt-1 flex-1">
+                  <div class="flex justify-between items-center gap-3">
+                    <div>$ <span class="text-2xl font-bold">2,500</span></div>
+                    <span
+                      class="
+                        inline-flex
+                        items-center
+                        px-2.5
+                        py-0.5
+                        rounded-full
+                        text-xs
+                        font-medium
+                        bg-red-100
+                        text-red-800
+                      "
+                    >
+                      Only One
+                    </span>
+                  </div>
+                  <p
+                    class="
+                      block
+                      text-sm
+                      font-medium
+                      text-gray-900
+                      truncate
+                      pointer-events-none
+                    "
+                  >
+                    Authentic Seiko Watch
+                  </p>
+                  <p
+                    class="
+                      text-sm
+                      line-clamp-3
+                      font-medium
+                      text-gray-500
+                      pointer-events-none
+                    "
+                  >
+                    The Seiko Prospex challenges every limit, with a collection
+                    of timepieces for sport lovers and adventure seekers.
+                  </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-3 py-3">
+                  <button
+                    type="button"
+                    class="
+                      js-add-to-cart-btn
+                      inline-flex
+                      justify-center
+                      items-center
+                      py-2
+                      px-4
+                      border border-transparent
+                      shadow-sm
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-pink-600
+                      hover:bg-pink-700
+                      focus:outline-none
+                      focus:ring-2
+                      focus:ring-offset-2
+                      focus:ring-pink-500
+                    "
+                  >
+                    <svg
+                      class="w-4 h-4 mr-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                    </svg>
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          flex-initial
+          bg-white
+          w-full
+          lg:max-w-md
+          border-b border-gray-100
+        "
+      >
+        <div class="flex flex-col h-full">
+          <div class="py-6 px-4 bg-pink-700 sm:px-6">
+            <div class="flex items-center justify-between">
+              <h2 class="text-lg font-medium text-white">Your shopping cart</h2>
+            </div>
+            <div class="mt-1">
+              <p class="text-sm text-pink-300">
+                Listing added into your shopping cart
+              </p>
+            </div>
+          </div>
+          <div>
+            <ul id="cart-item-list" class="divide-y divide-gray-200">
+              <li class="flex px-4 sm:px-6 py-4">
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://images.unsplash.com/photo-1596460107916-430662021049?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=40&h=40&q=80"
+                  alt=""
+                />
+                <div class="flex-1 flex justify-between items-center ml-3">
+                  <div>
+                    <p class="text-sm font-medium text-gray-900">
+                      Authentic Seiko Watch
+                    </p>
+                    <p class="text-sm text-gray-500">$2,500 x 1</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div>$2,500</div>
+                    <button
+                      type="button"
+                      class="
+                        text-red-400
+                        p-1
+                        rounded-full
+                        hover:bg-gray-50
+                        focus:outline-none
+                        focus:bg-gray-50
+                        focus:ring
+                        focus:ring-pink-500
+                        focus:ring-opacity-30
+                        transition
+                        duration-150
+                        ease-in-out
+                      "
+                      title="Remove item"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="flex px-4 sm:px-6 py-4">
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://images.unsplash.com/photo-1571689936114-b16146c9570a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=40&h=40&q=80"
+                  alt=""
+                />
+                <div class="flex-1 flex justify-between items-center ml-3">
+                  <div>
+                    <p class="text-sm font-medium text-gray-900">
+                      Handsome Handcarry Bag
+                    </p>
+                    <p class="text-sm text-gray-500">$50 x 3</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div>$150</div>
+                    <button
+                      type="button"
+                      class="
+                        text-red-400
+                        p-1
+                        rounded-full
+                        hover:bg-gray-50
+                        focus:outline-none
+                        focus:bg-gray-50
+                        focus:ring
+                        focus:ring-pink-500
+                        focus:ring-opacity-30
+                        transition
+                        duration-150
+                        ease-in-out
+                      "
+                      title="Remove item"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="
+              flex-shrink-0
+              px-4
+              py-4
+              flex
+              justify-end
+              border-t border-gray-200
+            "
+          >
+            <span
+              >Total <span class="text-3xl">$<span>2,650.00</span></span></span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/helpers.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
